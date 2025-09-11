@@ -35,17 +35,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-
-  
+  https://www.paradiso.nl/en 
 
   #### Screenshot(s) van de eerste pagina (small screen):
-  <img src="screenshot-homepagina.jpg" width="375px" alt="homepagina">
-  Homepagina
+  <img src="readme-images\screenshot_homepage.jpg" width="375px" alt="homepagina">
+  Homepage
   
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  <img src="screenshot-bestsellers.jpg" width="375px" alt="bestsellerpagina">
-  Bestsellers
+  <img src="readme-images\screenshot_news.jpg" width="375px" alt="newspagina">
+  News
 
  
 </details>
@@ -70,7 +69,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images\breakdownschets1.jpg" width="375px" alt="breakdown van de hele pagina 1">
+  <img src="readme-images\breakdownschets2.jpg" width="375px" alt="breakdown van de hele pagina 2">
+  <img src="readme-images\breakdownschets3.jpg" width="375px" alt="breakdown van de hele pagina 3">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
