@@ -8,21 +8,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
+ ## Jij 
 
-
-## Jij
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
-  ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  ### Auteur
+  Lana Tarabar
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane 
  
 </details>
 
@@ -36,15 +35,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
-  #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  https://www.amazon.nl/
+
+  #### Screenshot(s) van de eerste pagina (small screen):
+  <img src="screenshot-homepagina.jpg" width="375px" alt="homepagina">
+  Homepagina
+  
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="screenshot-bestsellers.jpg" width="375px" alt="bestsellerpagina">
+  Bestsellers
+
  
 </details>
 
@@ -233,4 +235,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. bron 2
   3. ...
 
+<<<<<<< HEAD
 </details>
+=======
+</details>
+>>>>>>> 80baf47b47d08c54106b8c64c620d5a09863c4e8
