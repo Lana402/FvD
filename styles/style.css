@@ -37,6 +37,12 @@
 	background-color: white;
 }
 
+.news-page{
+	background-color:#0093d0;
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .news-article p{
 	color:black;
 	font-family: Arial, Helvetica, sans-serif;
