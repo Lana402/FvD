@@ -1,54 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-	
+<html lang="nl">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Paradiso</title>
-	
+
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.ico">
 </head>
 
 <body class="paradiso-home">
-	<main>
+
 	<header>
-	<nav>
-		<ul>
-		<li><a href="myparadiso.html">My paradiso</a></li>
-		<li><a href="news.html">News</a></li>
-		</ul>
-	</nav>
+		<nav>
+			<button aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
+				<span class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				Menu
+			</button>
+
+			
+				<p>My Paradiso</p>
+		
+
+			<ul id="main-menu">
+				<li><a href="news.html">News</a></li>
+				<li><a href="#">What's on</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<h1 class="paradiso-titel">Paradiso</h1>
-	<p>57 years of concerts, club nights and culture</p>
+	<main>
 
-<section>
-	<img src="images/nachtwacht.jpg" alt="de nachtwacht">
-	<p>Just confirmed</p>
-	<h2>De Nachtwacht</h2>
-	<p>In Cinetol</p>
-	<time datetime="2025-10-07">7 October</time>
-</section>
-<section>
-	<h2>Program</h2>
-	<img src="images/artiest.jpg" alt="program">
-</section>
-<section>
-	<time datetime="2025-09-18">Th 18 Sep</time>
+		<h1 class="paradiso-titel">Paradiso</h1>
+		<p>57 years of concerts, club nights and culture</p>
+
+		<section>
+			<div class="carousel">
+				<ul>
+					<li data-label="afbeelding van de nachtwacht band">
+						<img src="images/nachtwacht.jpg" alt="afbeelding van de nachtwacht band">
+					</li>
+
+					<li data-label="afbeelding van de soyuz band">
+						<img src="images/soyuz.jpg" alt="afbeelding van de soyuz band">
+					</li>
+
+					<li data-label="afbeelding van artiest tyler chan">
+						<img src="images/tyler-chan.jpg" alt="afbeelding van artiest tyler chan">
+					</li>
+
+					<li data-label="afbeelding van artiest wies">
+						<img src="images/wies.jpg" alt="afbeelding van artiest wies">
+					</li>
+
+					<li data-label="afbeelding van artiest banshee">
+						<img src="images/banshee.jpg" alt="afbeelding van artiest banshee">
+					</li>
+
+					<li data-label="afbeelding van artiest ahp">
+						<img src="images/ahp.jpeg" alt="afbeelding van artiest ahp">
+					</li>
+				</ul>
+			</div>
+
+
+		</section>
+		<section>
+			<h2>Programme</h2>
+			<h3>Today</h3>
+			<img src="images/artiest.jpg" alt="programme" height="450">
+
+		</section>
+		<section class="filters">
+			<ul>
+				<li>By date</li>
+				<li>By month</li>
+				<li>By location</li>
+				<li>By type</li>
+			</ul>
+		</section>
+		<section>
+		<time datetime="2025-09-18">Th 18 Sep</time>
 		<h2>Blondshell + Francis of Delirium </h2>
 		<p>American singer songwriter makes sultry melodies / Tolhuistuin </p>
+		
 
 		<h2>clipping + Cooling Prongs</h2>
 		<p>Experimental hiphop merging noise , rap and science fiction</p>
 
 		<h2>Anna Ternheim</h2>
 		<p>Swedish singer songwriter / Bitterzoet </p>
+		</section>
 
-	<time datetime="2025-09-19">Fr 19 Sep</time>
+<section>
+		<time datetime="2025-09-19">Fr 19 Sep</time>
 		<h2>Far Caspian + Daze in Bed</h2>
 		<p>Lo-fi, dreamy synth pop / Tolhuistuin </p>
 
@@ -60,8 +112,9 @@
 
 		<h2>Don Diablo</h2>
 		<p>Headline show from future house pioneer</p>
-
-	<time datetime="2025-09-20">Sa 20 Sep</time>
+</section>
+<section>
+		<time datetime="2025-09-20">Sa 20 Sep</time>
 		<h2>Sober Clubbing</h2>
 		<p>Substance-free qeer techno club night / parallel</p>
 
@@ -76,8 +129,9 @@
 
 		<h2>Swingbeatz</h2>
 		<p>Club night featuring the best R&B and hip hop from the 80s and 90s</p>
-
-	<time datetime="2025-09-21">Su 21 Sep</time>
+		</section>
+<section>
+		<time datetime="2025-09-21">Su 21 Sep</time>
 		<h2>Superball 2025</h2>
 		<p>The biggest drag ball of Europe</p>
 
@@ -86,10 +140,10 @@
 
 		<h2>Sababa 5</h2>
 		<p>This concert is cancelled / Bitterzoet</p>
-</section>
+		</section>
 
-<script defer src="scripts/script.js"></script>
-</main>
+		<script defer src="scripts/script.js"></script>
+	</main>
 </body>
 
 </html>
