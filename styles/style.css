@@ -30,6 +30,11 @@
 /****************/
 
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 
 .paradiso-home {
 	background-color: #0093d0;
@@ -195,7 +200,8 @@ section.filters ul li{
 }
 
 .carousel li{
-	flex:0 0 80%;
+	flex:0 0 80vw;
+	max-width:80vw;
 	scroll-snap-align:center;
 	transition: transform 0.3s ease;
 }
@@ -244,4 +250,11 @@ nav p{
 	margin:0;
 }
 }
+
+img, video, section, ul {
+  max-width: 100%;  
+  box-sizing: border-box;
+}
+
+
 
