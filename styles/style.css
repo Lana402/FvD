@@ -245,7 +245,7 @@ nav p{
 }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   body {
     background: pink !important;
   }
