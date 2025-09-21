@@ -197,6 +197,7 @@ section.filters ul li{
 	list-style:none;
 	padding:0;
 	margin:0;
+	max-width:100vw;
 }
 
 .carousel li{
@@ -210,9 +211,10 @@ section.filters ul li{
 	width:100%;
 	height:auto;
 	display:block;
+	max-width:100%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
 	body {font-size:14px;
 }
 
