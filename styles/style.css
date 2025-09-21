@@ -123,8 +123,7 @@ nav ul {
 	margin:0;
 	position:absolute;
 	top: -10px;
-	left: 0;
-	right:0;
+	left: 20px;
 	background: white;
 	border-radius: 4px;
 }
@@ -191,7 +190,6 @@ section.filters ul li{
 	scroll-behavior:smooth;
 	overscroll-behavior: contain;
 	padding:1rem 0;
-	max-width:100vw;
 }
 
 .carousel ul{
@@ -199,13 +197,12 @@ section.filters ul li{
 	list-style:none;
 	padding:0;
 	margin:0;
-	width:100%;
-	box-sizing: border-box;
+	max-width:100vw;
 }
 
 .carousel li{
 	flex:0 0 90%;
-	max-width:90%;
+	max-width:90vw;
 	scroll-snap-align:center;
 	transition: transform 0.3s ease;
 }
