@@ -29,6 +29,8 @@
 /* JOUW STYLING */
 /****************/
 
+
+
 .paradiso-home {
 	background-color: #0093d0;
 	color: white;
@@ -148,12 +150,12 @@ a:visited {
 }
 
 time {
-	font-size: 1.7em;
+	font-size: 1.2em;
 	font-weight: bold;
 }
 
 section h2 {
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 }
 
@@ -193,7 +195,7 @@ section.filters ul li{
 }
 
 .carousel li{
-	flex:0 0 90%;
+	flex:0 0 80%;
 	scroll-snap-align:center;
 	transition: transform 0.3s ease;
 }
@@ -204,21 +206,23 @@ section.filters ul li{
 	display:block;
 }
 
+@media (max-width: 600px) {
+
 main section:nth-of-type(2) h2:first-of-type{
-	font-size:8em;
+	font-size:3em;
 	font-weight:bold;
 	margin-bottom: 1rem;
 }
 
 main section:nth-of-type(2) h2:nth-of-type(2){
-	font-size: 5em;
+	font-size: 2em;
 	font-weight:bold;
 	margin-bottom: 0.5rem;
 
 }
 
 main section:nth-of-type(2) h3{
-	font-size:2em;
+	font-size:1.5em;
 	font-weight:bold;
 	margin-bottom: 0.5rem;
 
@@ -235,7 +239,14 @@ main section time{
 }
 
 nav p{
-	font-size:1.4em;
+	font-size:1em;
 	font-weight:bold;
 	margin:0;
+}
+}
+
+@media (max-width: 600px) {
+  body {
+    background: pink !important;
+  }
 }
