@@ -200,8 +200,8 @@ section.filters ul li{
 }
 
 .carousel li{
-	flex:0 0 80vw;
-	max-width:80vw;
+	flex:0 0 90%;
+	max-width:90vw;
 	scroll-snap-align:center;
 	transition: transform 0.3s ease;
 }
@@ -212,7 +212,9 @@ section.filters ul li{
 	display:block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 414px) {
+	body {font-size:14px;
+}
 
 main section:nth-of-type(2) h2:first-of-type{
 	font-size:3em;
@@ -249,7 +251,7 @@ nav p{
 	font-weight:bold;
 	margin:0;
 }
-}
+
 
 img, video, section, ul {
   max-width: 100%;  
@@ -258,3 +260,4 @@ img, video, section, ul {
 
 
 
+}
