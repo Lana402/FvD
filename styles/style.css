@@ -190,6 +190,7 @@ section.filters ul li{
 	scroll-behavior:smooth;
 	overscroll-behavior: contain;
 	padding:1rem 0;
+	box-sizing:border-box;
 }
 
 .carousel ul{
@@ -201,8 +202,8 @@ section.filters ul li{
 }
 
 .carousel li{
-	flex:0 0 90%;
-	max-width:90vw;
+	flex:0 0 100%;
+	max-width:100%;
 	scroll-snap-align:center;
 	transition: transform 0.3s ease;
 }
@@ -214,7 +215,7 @@ section.filters ul li{
 	max-width:100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	body {font-size:14px;
 }
 
