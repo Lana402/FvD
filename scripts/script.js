@@ -1,18 +1,20 @@
 // JavaScript Document
 console.log("hi");
 
-const button = document.querySelector("nav > button");
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector("nav button");
+    const menu = document.getElementById("main-menu");
 
-button.addEventListener("click", () => {
-  const expanded = button.getAttribute("aria-expanded") === "true";
-  button.setAttribute("aria-expanded", String(!expanded));
+    menuButton.addEventListener("click", () => {
+        const expanded = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", String(!expanded));
+    });
+
+    const carousel = document.querySelector('.carousel ul');
+     carousel.addEventListener('scroll', () => {
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+            carousel.scrollLeft = 0;
+        }
+    });
 });
-
-const carousel = document.querySelector('.carousel ul');
-
-carousel.addEventListener('scroll', () => {
-    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
-        carousel.scrollLeft = 0;
-    }
-});
-
+   
