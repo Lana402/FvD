@@ -156,27 +156,27 @@ a:visited {
 }
 
 time {
-	font-size: 1.2em;
+	font-size: 2em;
 	font-weight: bold;
 }
 
 section h2 {
-	font-size: 1em;
+	font-size: 1.8em;
 	font-weight: bold;
 }
 
 section.filters ul{
 	display:flex;
 	gap:0.3rem;
-	padding: 0 0.7rem;
+	padding: 0 0.8rem;
 	margin: 2.2rem 0;
 	list-style:none;
 }
 
 section.filters ul li{
-	padding: 0.8rem 0.5rem;
+	padding: 1rem 0.7rem;
 	color:white;
-	background: rgb(43, 110, 161);
+	background: rgb(79, 151, 206);
 	border-radius: 0;
 	cursor:pointer;
 	font-weight:bold;
