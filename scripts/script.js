@@ -1,4 +1,4 @@
-/*Copilot*/
+/*Copilot en Youtube*/
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.querySelector("#menu-button");
   const menuContainer = document.querySelector("#menu-container");
