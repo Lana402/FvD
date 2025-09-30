@@ -11,27 +11,36 @@
 
 <body class="news-article">
 
-        <header>
+       <header>
 		<nav>
-			<button aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
-				<span class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
+			<button id="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu"> <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded en Copilot-->
+				<img src="images/hamburger-icoon-zwart.svg" alt="Menu" class="hamburger-icon"> <!--https://www.svgrepo.com/svg/524617/hamburger-menu
+-->
 				Menu
 			</button>
 
-			
-				<p>My Paradiso</p>
-		
-
-			<ul id="main-menu">
-				<li><a href="#">What's on</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="#">My tickets</a></li>
+			<div id="menu-container">
+				<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon"> <!--https://www.svgrepo.com/svg/521564/close-->
+				<ul id="main-menu">
+				<li><a href="#">What's on</a></li> <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
+				<li><a href="news.html">News</a></li>
+				<li><a href="#">My tickets</a></li>
 				<li><a href="#">Visit</a></li>
+				<li class="menu-small"><a href="#">About us</a></li>
+				<li class="menu-small"><a href="#">Membership</a></li>
+				<li class="menu-small"><a href="#">Archive</a></li>
+				<li class="menu-small"><a href="#">Webshop</a></li>
+				<li class="menu-small"><a href="#">Support us</a></li>
+				<li class="menu-small"><a href="#">Working at Paradiso</a></li>
+				<li class="menu-small"><a href="#">Contact & Partners</a></li>
 			</ul>
+</div>
+			<img src="images/zoek-icoon-zwart.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
+-->
+
+
+			<p>My Paradiso</p>
+
 		</nav>
 	</header>
 
@@ -39,7 +48,7 @@
     <h1 class="news-titel">Long Fling brengt flexidisc uit op Paradiso Vinyl Club</h1>
     <time datetime="2025-09-16">16 September, 2025</time>
 
-    <img src="images/longfling.jpg" alt="Long Fling" width="420px">
+    <img src="images/longflingnewsarticle.webp" alt="Long Fling">
     <article>
     <h2></h2>
         <p>Op 23 september brengt Paradiso Vinyl Club, het onafhankelijke platenlabel van Paradiso, een exclusieve vinyl flexidisc uit van Long Fling, het nieuwe project van Pip Blom en Willem Smit.
@@ -82,14 +91,15 @@
 <p>Meer informatie</p>
 </section>
 
-<img src="images/longfling2.jpg" alt="afbeelding van de tracklist">
+<img src="images/Long-Fling_Flexi-Mockup.webp" alt="afbeelding van de single van Long Fling">
 
 <section>
+    <h2></h2>
     <ul>
-    <p>Tracklist</p>
-    <p>A:Shoes</p>
-    <p>Meer informatie over de single</p>
+    <li><p>Tracklist:</p></li>
+    <li><p>A:Shoes</p></li>
     </ul>
+    <p>Meer informatie over de single</p>
 </section>
 
 <section>

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="lana">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Paradiso</title>
@@ -16,58 +16,96 @@
 
 	<header>
 		<nav>
-			<button aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
-				<span class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
+			<button id="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu"> <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded en Copilot-->
+				<img src="images/hamburger-icoon.svg" alt="Menu" class="hamburger-icon"> <!--https://www.svgrepo.com/svg/524617/hamburger-menu
+-->
 				Menu
 			</button>
 
+			<div id="menu-container">
+				<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon"> <!--https://www.svgrepo.com/svg/521564/close-->
+				<ul id="main-menu">
+					<li><a href="#">What's on</a></li> <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
+					<li><a href="news.html">News</a></li>
+					<li><a href="#">My tickets</a></li>
+					<li><a href="#">Visit</a></li>
+					<li class="menu-small"><a href="#">About us</a></li>
+					<li class="menu-small"><a href="#">Membership</a></li>
+					<li class="menu-small"><a href="#">Archive</a></li>
+					<li class="menu-small"><a href="#">Webshop</a></li>
+					<li class="menu-small"><a href="#">Support us</a></li>
+					<li class="menu-small"><a href="#">Working at Paradiso</a></li>
+					<li class="menu-small"><a href="#">Contact & Partners</a></li>
+				</ul>
+			</div>
+			<img src="images/zoek-icoon.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
+-->
 
 			<p>My Paradiso</p>
 
-
-			<ul id="main-menu">
-				<li><a href="#">What's on</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="#">My tickets</a></li>
-				<li><a href="#">Visit</a></li>
-			</ul>
 		</nav>
 	</header>
 
 	<main>
 
-		<h1 class="paradiso-titel">Paradiso</h1>
-		<p>57 years of concerts, club nights and culture</p>
+		<h1>Paradiso</h1>
+		<p class="paradiso-ondertitel">57 years of concerts, club nights and <span class="highlight">culture</span></p>
 
 		<section>
 			<div class="carousel">
 				<ul>
-					<li data-label="afbeelding van de nachtwacht band">
+					<li>
 						<img src="images/nachtwacht.jpg" alt="afbeelding van de nachtwacht band">
+						<div class="carousel-text">
+							<h2>De Nachtwacht</h2>
+							<p>In Tolhuistuin</p>
+							<p>18 September</p>
+						</div>
 					</li>
 
-					<li data-label="afbeelding van de soyuz band">
+					<li>
 						<img src="images/soyuz.jpg" alt="afbeelding van de soyuz band">
+						<div class="carousel-text">
+							<h2>Soyuz</h2>
+							<p>In Paradiso</p>
+							<p>20 September</p>
+						</div>
 					</li>
 
-					<li data-label="afbeelding van artiest tyler chan">
+					<li>
 						<img src="images/tyler-chan.jpg" alt="afbeelding van artiest tyler chan">
+						<div class="carousel-text">
+							<h2>Tyler Chan</h2>
+							<p>In Paradiso</p>
+							<p>22 September</p>
+						</div>
 					</li>
 
-					<li data-label="afbeelding van artiest wies">
+					<li>
 						<img src="images/wies.jpg" alt="afbeelding van artiest wies">
+						<div class="carousel-text">
+							<h2>Wies</h2>
+							<p>In Tolhuistuin</p>
+							<p>25 September</p>
+						</div>
 					</li>
 
-					<li data-label="afbeelding van artiest banshee">
+					<li>
 						<img src="images/banshee.jpg" alt="afbeelding van artiest banshee">
+						<div class="carousel-text">
+							<h2>Banshee</h2>
+							<p>In Paradiso</p>
+							<p>27 September</p>
+						</div>
 					</li>
 
-					<li data-label="afbeelding van artiest ahp">
+					<li>
 						<img src="images/ahp.jpeg" alt="afbeelding van artiest ahp">
+						<div class="carousel-text">
+							<h2>AHP</h2>
+							<p>In Paradiso</p>
+							<p>30 September</p>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -77,10 +115,23 @@
 		<section>
 			<h2>Programme</h2>
 			<h3>Today</h3>
-			<img src="images/artiest.jpg" alt="programme" height="450">
-
+			<div class="today-image">
+				<img src="images/artiest.jpg" alt="afbeelding van artiest" height="350" width="300">
+				<div class="today-text">
+					<h3>dEUS</h3>
+					<p>In Paradiso</p>
+					<p>Starts 20:30</p>
+				</div>
+			</div>
+			<iframe data-testid="embed-iframe" style="border-radius:12px"
+				src="https://open.spotify.com/embed/track/1WvInhbItBzIuuVpQIXgPP?utm_source=generator&theme=0"
+				width="300" height="152" allowfullscreen=""
+				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+				loading="lazy"></iframe>
 		</section>
+
 		<section class="filters">
+			<h2></h2>
 			<ul>
 				<li>By date</li>
 				<li>By month</li>
@@ -89,62 +140,103 @@
 			</ul>
 		</section>
 		<section>
-			<time datetime="2025-09-18">Th 18 Sep</time>
-			<h2>Blondshell + Francis of Delirium </h2>
-			<p>American singer songwriter makes sultry melodies / Tolhuistuin </p>
-<hr />
+			<h2></h2>
+			<time datetime="2025-09-18">Th 18 Sep</time> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time-->
+			<article class="concert">
+				<h2>Blondshell + Francis of Delirium </h2>
+				<span class="time">18:30</span>
+				<p>American singer songwriter makes sultry melodies / Tolhuistuin </p>
+			</article>
+			<hr>	<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr-->
 
-			<h2>clipping + Cooling Prongs</h2>
-			<p>Experimental hiphop merging noise , rap and science fiction</p>
-<hr />
-			<h2>Anna Ternheim</h2>
-			<p>Swedish singer songwriter / Bitterzoet </p>
-		</section>
+			<article class="concert">
+				<h2>clipping + Cooling Prongs</h2>
+				<span class="time">20:00</span> <!--Copilot-->
+				<p>Experimental hiphop merging noise , rap and science fiction</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>Anna Ternheim</h2>
+				<span class="time">21:00</span>
+				<p>Swedish singer songwriter / Bitterzoet </p>
+			</article>
 
-		<section>
+
 			<time datetime="2025-09-19">Fr 19 Sep</time>
-			<h2>Far Caspian + Daze in Bed</h2>
-			<p>Lo-fi, dreamy synth pop / Tolhuistuin </p>
-<hr />
+			<article class="concert">
+				<h2>Far Caspian + Daze in Bed</h2>
+				<span class="time">19:30</span>
+				<p>Lo-fi, dreamy synth pop / Tolhuistuin </p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>Dermot Kennedy + grace ginger</h2>
+				<span class="time">20:00</span>
+				<p>Irish roots and raw emotion set to an R&B heartbeat</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>Trana Sahara</h2>
+				<span class="time">21:00</span>
+				<p>Electronic beats with North African, Eastern and Arabic influences / Parallel</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>Don Diablo</h2>
+				<span class="time">22:00</span>
+				<p>Headline show from future house pioneer</p>
+			</article>
 
-			<h2>Dermot Kennedy + grace ginger</h2>
-			<p>Irish roots and raw emotion set to an R&B heartbeat</p>
-<hr />
-			<h2>Trana Sahara</h2>
-			<p>Electronic beats with North African, Eastern and Arabic influences / Parallel</p>
-<hr />
-			<h2>Don Diablo</h2>
-			<p>Headline show from future house pioneer</p>
-		</section>
-		<section>
 			<time datetime="2025-09-20">Sa 20 Sep</time>
-			<h2>Sober Clubbing</h2>
-			<p>Substance-free qeer techno club night / parallel</p>
-<hr />
-			<h2>Satori + Susan Flight</h2>
-			<p>Melodic and cosmic electronic music</p>
-<hr />
-			<h2>The destruction of the Cult of the Sun</h2>
-			<p>Indie,Electro,Funk mix from masked men</p>
-<hr />
-			<h2>ZULAN</h2>
-			<p>Viral DJ club night with Afro, House and Hip Hop / Parallel</p>
-<hr />
-			<h2>Swingbeatz</h2>
-			<p>Club night featuring the best R&B and hip hop from the 80s and 90s</p>
-		</section>
-		<section>
-			<time datetime="2025-09-21">Su 21 Sep</time>
-			<h2>Superball 2025</h2>
-			<p>The biggest drag ball of Europe</p>
-<hr />
+			<article class="concert">
+				<h2>Sober Clubbing</h2>
+				<span class="time">20:00</span>
+				<p>Substance-free queer techno club night / parallel</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>Satori + Susan Flight</h2>
+				<span class="time">21:00</span>
+				<p>Melodic and cosmic electronic music</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>The destruction of the Cult of the Sun</h2>
+				<span class="time">22:00</span>
+				<p>Indie,Electro,Funk mix from masked men</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>ZULAN</h2>
+				<span class="time">23:00</span>
+				<p>Viral DJ club night with Afro, House and Hip Hop</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>Swingbeatz</h2>
+				<span class="time">00:00</span>
+				<p>Club night featuring the best R&B and hip hop from the 80s and 90s</p>
+			</article>
 
-			<h2>Ode aan Richmond</h2>
-			<p> Tribute to popstar from the 80s</p>
-<hr />
-			<h2>Sababa 5</h2>
-			<p>This concert is cancelled / Bitterzoet</p>
+			<time datetime="2025-09-21">Su 21 Sep</time>
+			<article class="concert">
+				<h2>Superball 2025</h2>
+				<span class="time">19:00</span>
+				<p>The biggest drag ball of Europe</p>
+			</article>
+			<hr>
+			<article class="concert">
+				<h2>Ode aan Richmond</h2>
+				<span class="time">21:00</span>
+				<p> Tribute to popstar from the 80s</p>
+				<hr>
+				<article class="concert">
+					<h2>Sababa 5</h2>
+					<p>This concert is cancelled</p>
+				</article>
+			</article>
 		</section>
+
 
 		<script defer src="scripts/script.js"></script>
 	</main>

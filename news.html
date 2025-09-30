@@ -10,27 +10,36 @@
     
 <body class="news-page">
 
-        <header>
+     <header>
 		<nav>
-			<button aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
-				<span class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
+			<button id="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu"> <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded en Copilot-->
+				<img src="images/hamburger-icoon.svg" alt="Menu" class="hamburger-icon"> <!--https://www.svgrepo.com/svg/524617/hamburger-menu
+-->
 				Menu
 			</button>
 
-			
-				<p>My Paradiso</p>
-		
-
-			<ul id="main-menu">
-				<li><a href="#">What's on</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="#">My tickets</a></li>
+			<div id="menu-container">
+				<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon"> <!--https://www.svgrepo.com/svg/521564/close-->
+				<ul id="main-menu">
+				<li><a href="#">What's on</a></li> <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
+				<li><a href="news.html">News</a></li>
+				<li><a href="#">My tickets</a></li>
 				<li><a href="#">Visit</a></li>
+				<li class="menu-small"><a href="#">About us</a></li>
+				<li class="menu-small"><a href="#">Membership</a></li>
+				<li class="menu-small"><a href="#">Archive</a></li>
+				<li class="menu-small"><a href="#">Webshop</a></li>
+				<li class="menu-small"><a href="#">Support us</a></li>
+				<li class="menu-small"><a href="#">Working at Paradiso</a></li>
+				<li class="menu-small"><a href="#">Contact & Partners</a></li>
 			</ul>
+</div>
+			<img src="images/zoek-icoon.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
+-->
+
+
+			<p>My Paradiso</p>
+
 		</nav>
 	</header>
 
@@ -38,22 +47,25 @@
     <h1>News</h1>
 
     <article>
-        <img src="images/longfling.jpg" alt="afbeelding van 2 bandleden van long fling" width="420px">
+        <img src="images/longflingnews.webp" alt="afbeelding van 2 bandleden van long fling" height="270" width="360"> 
         <h2>Long Fling brengt flexidisc uit op Paradiso Vinyl Club</h2>
         <a href="newsarticle.html">Read more</a>
     </article>
 
     <article>
+        <img src="images/bobnews.webp" alt="afbeelding van artiest bob vylan" height="270" width="360">
         <h2>Statement about concert Bob Vylan</h2>
         <p>Read more</p>
     </article>
 
     <article>
+        <img src="images/deusnews.webp" alt="afbeelding van band deus" height="270" width="360">
         <h2>dEUS speelt extra show op 4 april in Paradiso</h2>
         <p>Read more</p>
     </article>
 
     <article>
+        <img src="images/londoncallingnews.webp" alt="afbeelding van band london calling" height="270" width="360">
         <h2>London calling maakt dagindeling bekend en voegt 7 nieuwe namen toe</h2>
         <p>Read more</p>
     </article>

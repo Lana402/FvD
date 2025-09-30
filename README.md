@@ -238,8 +238,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. bron 2
   3. ...
 
-<<<<<<< HEAD
+
 </details>
-=======
+
 </details>
->>>>>>> 80baf47b47d08c54106b8c64c620d5a09863c4e8
+
