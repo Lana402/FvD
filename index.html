@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="nl">
 
 <head>
@@ -16,38 +17,60 @@
 
 	<header>
 		<nav>
-			<button id="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu"> <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded en Copilot-->
+			<button id="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
+				<!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded en Copilot-->
 				<img src="images/hamburger-icoon.svg" alt="Menu" class="hamburger-icon"> <!--https://www.svgrepo.com/svg/524617/hamburger-menu
 -->
 				Menu
 			</button>
 
 			<div id="menu-container">
-				<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon"> <!--https://www.svgrepo.com/svg/521564/close-->
-				<ul id="main-menu">
-					<li><a href="#">What's on</a></li> <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
-					<li><a href="news.html">News</a></li>
-					<li><a href="#">My tickets</a></li>
-					<li><a href="#">Visit</a></li>
-					<li class="menu-small"><a href="#">About us</a></li>
-					<li class="menu-small"><a href="#">Membership</a></li>
-					<li class="menu-small"><a href="#">Archive</a></li>
-					<li class="menu-small"><a href="#">Webshop</a></li>
-					<li class="menu-small"><a href="#">Support us</a></li>
-					<li class="menu-small"><a href="#">Working at Paradiso</a></li>
-					<li class="menu-small"><a href="#">Contact & Partners</a></li>
-				</ul>
+				<div class="close-button">
+					<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon">
+					<span>Close</span>
+				</div>
+				<!--https://www.svgrepo.com/svg/521564/close-->
+				<div class="menu-wrapper"> <!---->
+					<ul id="main-menu">
+						<li><a href="#">What's on</a></li>
+						<!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
+						<li><a href="news.html">News</a></li>
+						<li><a href="#">My tickets</a></li>
+						<li><a href="#">Visit</a></li>
+						<li class="menu-small"><a href="#">About us</a></li>
+						<li class="menu-small"><a href="#">Membership</a></li>
+						<li class="menu-small"><a href="#">Archive</a></li>
+						<li class="menu-small"><a href="#">Webshop</a></li>
+						<li class="menu-small"><a href="#">Support us</a></li>
+						<li class="menu-small"><a href="#">Working at Paradiso</a></li>
+						<li class="menu-small"><a href="#">Contact & Partners</a></li>
+
+						<li class="menu-icons"><a href="#"><img src="images/clubparadisologo.jpg"
+									alt="Club Paradiso logo">Club Paradiso</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/indiestadlogo.png"
+									alt="Indiestad logo">Indiestad</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/kosmoslogo.jpg" alt="Kosmos logo">Kosmos</a>
+						</li>
+						<li class="menu-icons"><a href="#"><img src="images/sugarmountainlogo.jpg"
+									alt="Sugar Mountain logo">Sugar Mountain</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/supersoniclogo.png"
+									alt="Supersonic logo">Super-Sonic Jazz</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/tropicslogo.png" alt="Tropics logo">Ticket
+								to the Tropics</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/toneslogo.png" alt="Tones logo">Tones</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<img src="images/zoek-icoon.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
--->
+			<img src="images/zoek-icoon.svg" alt="zoek icoon" class="search-icon">
+			<!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true-->
+
 
 			<p>My Paradiso</p>
-
 		</nav>
 	</header>
 
 	<main>
-
 		<h1>Paradiso</h1>
 		<p class="paradiso-ondertitel">57 years of concerts, club nights and <span class="highlight">culture</span></p>
 
@@ -141,97 +164,128 @@
 		</section>
 		<section>
 			<h2></h2>
-			<time datetime="2025-09-18">Th 18 Sep</time> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time-->
+			<time datetime="2025-09-18">Th 18 Sep</time>
+			<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time-->
 			<article class="concert">
-				<h2>Blondshell + Francis of Delirium </h2>
-				<span class="time">18:30</span>
+				<div class="concert-header"> <!---->
+					<h2>Blondshell + Francis of Delirium </h2>
+					<span class="time">18:30</span>
+				</div>
 				<p>American singer songwriter makes sultry melodies / Tolhuistuin </p>
 			</article>
-			<hr>	<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr-->
+			<hr> <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr-->
 
 			<article class="concert">
-				<h2>clipping + Cooling Prongs</h2>
-				<span class="time">20:00</span> <!--Copilot-->
+				<div class="concert-header">
+					<h2>clipping + Cooling Prongs</h2>
+					<span class="time">20:00</span> <!--Copilot-->
+				</div>
 				<p>Experimental hiphop merging noise , rap and science fiction</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>Anna Ternheim</h2>
-				<span class="time">21:00</span>
+				<div class="concert-header">
+					<h2>Anna Ternheim</h2>
+					<span class="time">21:00</span>
+				</div>
 				<p>Swedish singer songwriter / Bitterzoet </p>
 			</article>
 
 
 			<time datetime="2025-09-19">Fr 19 Sep</time>
 			<article class="concert">
-				<h2>Far Caspian + Daze in Bed</h2>
-				<span class="time">19:30</span>
+				<div class="concert-header">
+					<h2>Far Caspian + Daze in Bed</h2>
+					<span class="time">19:30</span>
+				</div>
 				<p>Lo-fi, dreamy synth pop / Tolhuistuin </p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>Dermot Kennedy + grace ginger</h2>
-				<span class="time">20:00</span>
+				<div class="concert-header">
+					<h2>Dermot Kennedy + grace ginger</h2>
+					<span class="time">20:00</span>
+				</div>
 				<p>Irish roots and raw emotion set to an R&B heartbeat</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>Trana Sahara</h2>
-				<span class="time">21:00</span>
+				<div class="concert-header">
+					<h2>Trana Sahara</h2>
+					<span class="time">21:00</span>
+				</div>
 				<p>Electronic beats with North African, Eastern and Arabic influences / Parallel</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>Don Diablo</h2>
-				<span class="time">22:00</span>
+				<div class="concert-header">
+					<h2>Don Diablo</h2>
+					<span class="time">22:00</span>
+				</div>
 				<p>Headline show from future house pioneer</p>
 			</article>
 
 			<time datetime="2025-09-20">Sa 20 Sep</time>
 			<article class="concert">
-				<h2>Sober Clubbing</h2>
-				<span class="time">20:00</span>
+				<div class="concert-header">
+					<h2>Sober Clubbing</h2>
+					<span class="time">20:00</span>
+				</div>
 				<p>Substance-free queer techno club night / parallel</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>Satori + Susan Flight</h2>
-				<span class="time">21:00</span>
+				<div class="concert-header">
+					<h2>Satori + Susan Flight</h2>
+					<span class="time">21:00</span>
+				</div>
 				<p>Melodic and cosmic electronic music</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>The destruction of the Cult of the Sun</h2>
-				<span class="time">22:00</span>
+				<div class="concert-header">
+					<h2>The destruction of the Cult of the Sun</h2>
+					<span class="time">22:00</span>
+				</div>
 				<p>Indie,Electro,Funk mix from masked men</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>ZULAN</h2>
-				<span class="time">23:00</span>
+				<div class="concert-header">
+					<h2>ZULAN</h2>
+					<span class="time">23:00</span>
+				</div>
 				<p>Viral DJ club night with Afro, House and Hip Hop</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>Swingbeatz</h2>
-				<span class="time">00:00</span>
+				<div class="concert-header">
+					<h2>Swingbeatz</h2>
+					<span class="time">00:00</span>
+				</div>
 				<p>Club night featuring the best R&B and hip hop from the 80s and 90s</p>
 			</article>
 
 			<time datetime="2025-09-21">Su 21 Sep</time>
 			<article class="concert">
-				<h2>Superball 2025</h2>
-				<span class="time">19:00</span>
+				<div class="concert-header">
+					<h2>Superball 2025</h2>
+					<span class="time">19:00</span>
+				</div>
 				<p>The biggest drag ball of Europe</p>
 			</article>
 			<hr>
 			<article class="concert">
-				<h2>Ode aan Richmond</h2>
-				<span class="time">21:00</span>
+				<div class="concert-header">
+					<h2>Ode aan Richmond</h2>
+					<span class="time">21:00</span>
+				</div>
 				<p> Tribute to popstar from the 80s</p>
 				<hr>
 				<article class="concert">
-					<h2>Sababa 5</h2>
+					<div class="concert-header">
+						<h2>Sababa 5</h2>
+					</div>
 					<p>This concert is cancelled</p>
 				</article>
 			</article>

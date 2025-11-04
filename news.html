@@ -1,76 +1,123 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradiso</title>
     <link rel="stylesheet" href="styles/style.css">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.ico">
 </head>
-    
+
 <body class="news-page">
 
-     <header>
-		<nav>
-			<button id="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu"> <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded en Copilot-->
-				<img src="images/hamburger-icoon.svg" alt="Menu" class="hamburger-icon"> <!--https://www.svgrepo.com/svg/524617/hamburger-menu
+    <header>
+        <nav>
+            <button id="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
+                <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded en Copilot-->
+                <img src="images/hamburger-icoon.svg" alt="Menu" class="hamburger-icon"> <!--https://www.svgrepo.com/svg/524617/hamburger-menu
 -->
-				Menu
-			</button>
+                Menu
+            </button>
 
-			<div id="menu-container">
-				<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon"> <!--https://www.svgrepo.com/svg/521564/close-->
-				<ul id="main-menu">
-				<li><a href="#">What's on</a></li> <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
-				<li><a href="news.html">News</a></li>
-				<li><a href="#">My tickets</a></li>
-				<li><a href="#">Visit</a></li>
-				<li class="menu-small"><a href="#">About us</a></li>
-				<li class="menu-small"><a href="#">Membership</a></li>
-				<li class="menu-small"><a href="#">Archive</a></li>
-				<li class="menu-small"><a href="#">Webshop</a></li>
-				<li class="menu-small"><a href="#">Support us</a></li>
-				<li class="menu-small"><a href="#">Working at Paradiso</a></li>
-				<li class="menu-small"><a href="#">Contact & Partners</a></li>
-			</ul>
-</div>
-			<img src="images/zoek-icoon.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
+            <div id="menu-container">
+                <div class="close-button">
+                    <img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon">
+                    <span>Close</span>
+                </div>
+                <!--https://www.svgrepo.com/svg/521564/close-->
+                <div class="menu-wrapper"> <!---->
+                    <ul id="main-menu">
+                        <li><a href="#">What's on</a></li>
+                        <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">My tickets</a></li>
+                        <li><a href="#">Visit</a></li>
+                        <li class="menu-small"><a href="#">About us</a></li>
+                        <li class="menu-small"><a href="#">Membership</a></li>
+                        <li class="menu-small"><a href="#">Archive</a></li>
+                        <li class="menu-small"><a href="#">Webshop</a></li>
+                        <li class="menu-small"><a href="#">Support us</a></li>
+                        <li class="menu-small"><a href="#">Working at Paradiso</a></li>
+                        <li class="menu-small"><a href="#">Contact & Partners</a></li>
+
+                        <li class="menu-icons"><a href="#"><img src="images/clubparadisologo.jpg"
+                                    alt="Club Paradiso logo">Club Paradiso</a></li>
+                        <li class="menu-icons"><a href="#"><img src="images/indiestadlogo.png"
+                                    alt="Indiestad logo">Indiestad</a></li>
+                        <li class="menu-icons"><a href="#"><img src="images/kosmoslogo.jpg" alt="Kosmos logo">Kosmos</a>
+                        </li>
+                        <li class="menu-icons"><a href="#"><img src="images/sugarmountainlogo.jpg"
+                                    alt="Sugar Mountain logo">Sugar Mountain</a></li>
+                        <li class="menu-icons"><a href="#"><img src="images/supersoniclogo.png"
+                                    alt="Supersonic logo">Super-Sonic Jazz</a></li>
+                        <li class="menu-icons"><a href="#"><img src="images/tropicslogo.png" alt="Tropics logo">Ticket
+                                to the Tropics</a></li>
+                        <li class="menu-icons"><a href="#"><img src="images/toneslogo.png" alt="Tones logo">Tones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="images/zoek-icoon.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
 -->
 
 
-			<p>My Paradiso</p>
+            <p>My Paradiso</p>
 
-		</nav>
-	</header>
+        </nav>
+    </header>
 
-<main>
-    <h1>News</h1>
+    <main>
+        <h1>News</h1>
 
-    <article>
-        <img src="images/longflingnews.webp" alt="afbeelding van 2 bandleden van long fling" height="270" width="360"> 
-        <h2>Long Fling brengt flexidisc uit op Paradiso Vinyl Club</h2>
-        <a href="newsarticle.html">Read more</a>
-    </article>
+        <article>
+            <img src="images/longflingnews.webp" alt="afbeelding van 2 bandleden van long fling" height="270"
+                width="360">
+            <h2>Long Fling brengt flexidisc uit op Paradiso Vinyl Club</h2>
+            <a href="newsarticle.html" class="read-more">
+                Read more <img src="images/pijlrechtswit.svg" alt="pijl naar rechts" class="pijl-icoon-wit"></a>
 
-    <article>
-        <img src="images/bobnews.webp" alt="afbeelding van artiest bob vylan" height="270" width="360">
-        <h2>Statement about concert Bob Vylan</h2>
-        <p>Read more</p>
-    </article>
 
-    <article>
-        <img src="images/deusnews.webp" alt="afbeelding van band deus" height="270" width="360">
-        <h2>dEUS speelt extra show op 4 april in Paradiso</h2>
-        <p>Read more</p>
-    </article>
+        </article>
 
-    <article>
-        <img src="images/londoncallingnews.webp" alt="afbeelding van band london calling" height="270" width="360">
-        <h2>London calling maakt dagindeling bekend en voegt 7 nieuwe namen toe</h2>
-        <p>Read more</p>
-    </article>
+        <article>
+            <img src="images/bobnews.webp" alt="afbeelding van artiest bob vylan" height="270" width="360">
+            <h2>Statement about concert Bob Vylan</h2>
+            <a href="#" class="read-more">
+                Read more <img src="images/pijlrechtswit.svg" alt="pijl naar rechts" class="pijl-icoon-wit"></a>
+        </article>
 
-    <script defer src="scripts/script.js"></script>
+        <article>
+            <img src="images/deusnews.webp" alt="afbeelding van band deus" height="270" width="360">
+            <h2>dEUS speelt extra show op 4 april in Paradiso</h2>
+            <a href="#" class="read-more">
+                Read more <img src="images/pijlrechtswit.svg" alt="pijl naar rechts" class="pijl-icoon-wit"></a>
+        </article>
+
+        <article>
+            <img src="images/londoncallingnews.webp" alt="afbeelding van band london calling" height="270" width="360">
+            <h2>London calling maakt dagindeling bekend en voegt 7 nieuwe namen toe</h2>
+            <a href="#" class="read-more">
+                Read more <img src="images/pijlrechtswit.svg" alt="pijl naar rechts" class="pijl-icoon-wit"></a>
+        </article>
+
+
+        <footer class="site-footer"> <!---->
+            <div class="footer-row">
+                <div class="footer-left">
+                    <img src="images/syncwit.svg" alt="sync icoon" class="footer-icoon"> <!---->
+                    <span>Bekijk in het Nederlands</span>
+                </div>
+                <p class="footer-right"> © Paradiso 2025</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Privacy policy</p>
+                <p>Manage cookies</p>
+            </div>
+        </footer>
+        <script defer src="scripts/script.js"></script>
     </main>
 </body>
+
 </html>

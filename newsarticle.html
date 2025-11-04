@@ -20,22 +20,44 @@
 			</button>
 
 			<div id="menu-container">
-				<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon"> <!--https://www.svgrepo.com/svg/521564/close-->
-				<ul id="main-menu">
-				<li><a href="#">What's on</a></li> <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
-				<li><a href="news.html">News</a></li>
-				<li><a href="#">My tickets</a></li>
-				<li><a href="#">Visit</a></li>
-				<li class="menu-small"><a href="#">About us</a></li>
-				<li class="menu-small"><a href="#">Membership</a></li>
-				<li class="menu-small"><a href="#">Archive</a></li>
-				<li class="menu-small"><a href="#">Webshop</a></li>
-				<li class="menu-small"><a href="#">Support us</a></li>
-				<li class="menu-small"><a href="#">Working at Paradiso</a></li>
-				<li class="menu-small"><a href="#">Contact & Partners</a></li>
-			</ul>
-</div>
-			<img src="images/zoek-icoon-zwart.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
+				<div class="close-button">
+				<img src="images/close-icon.svg" alt="Sluit Menu" class="close-icon"> 
+				<span>Close</span>
+				</div>
+				<!--https://www.svgrepo.com/svg/521564/close-->
+				<div class="menu-wrapper"> <!---->
+					<ul id="main-menu">
+						<li><a href="#">What's on</a></li>
+						<!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/hash en Copilot-->
+						<li><a href="news.html">News</a></li>
+						<li><a href="#">My tickets</a></li>
+						<li><a href="#">Visit</a></li>
+						<li class="menu-small"><a href="#">About us</a></li>
+						<li class="menu-small"><a href="#">Membership</a></li>
+						<li class="menu-small"><a href="#">Archive</a></li>
+						<li class="menu-small"><a href="#">Webshop</a></li>
+						<li class="menu-small"><a href="#">Support us</a></li>
+						<li class="menu-small"><a href="#">Working at Paradiso</a></li>
+						<li class="menu-small"><a href="#">Contact & Partners</a></li>
+
+						<li class="menu-icons"><a href="#"><img src="images/clubparadisologo.jpg"
+									alt="Club Paradiso logo">Club Paradiso</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/indiestadlogo.png"
+									alt="Indiestad logo">Indiestad</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/kosmoslogo.jpg" alt="Kosmos logo">Kosmos</a>
+						</li>
+						<li class="menu-icons"><a href="#"><img src="images/sugarmountainlogo.jpg"
+									alt="Sugar Mountain logo">Sugar Mountain</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/supersoniclogo.png"
+									alt="Supersonic logo">Super-Sonic Jazz</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/tropicslogo.png" alt="Tropics logo">Ticket
+								to the Tropics</a></li>
+						<li class="menu-icons"><a href="#"><img src="images/toneslogo.png" alt="Tones logo">Tones</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<img src="images/zoek-icoon.svg" alt="zoek icoon" class="search-icon"> <!--https://www.svgrepo.com/svg/532551/search-alt-1?edit=true
 -->
 
 
@@ -45,6 +67,9 @@
 	</header>
 
     <main>
+        <div class="news-header">
+            <img src="images/pijl-links.svg" alt="pijl naar links" class="pijl-links"> <!---->
+            <span class="news-overview"> News overview</span></div>
     <h1 class="news-titel">Long Fling brengt flexidisc uit op Paradiso Vinyl Club</h1>
     <time datetime="2025-09-16">16 September, 2025</time>
 
@@ -88,7 +113,9 @@
     Meld je aan door een mail te sturen naar vinylclub@paradiso.nl met in het onderwerp 'Long Fling'. 
     Let op! De gastenlijst is beperkt. Reguliere tickets zijn verkrijgbaar via de website van Paradiso.
     </p>
-<p>Meer informatie</p>
+<p class="meer-info">
+Meer informatie
+<img src="images/pijlrechtszwart.svg" alt="pijl naar rechts" class="pijl-icoon-zwart"></p>
 </section>
 
 <img src="images/Long-Fling_Flexi-Mockup.webp" alt="afbeelding van de single van Long Fling">
@@ -99,7 +126,9 @@
     <li><p>Tracklist:</p></li>
     <li><p>A:Shoes</p></li>
     </ul>
-    <p>Meer informatie over de single</p>
+    <p class="meer-info">
+Meer informatie over de single
+<img src="images/pijlrechtszwart.svg" alt="pijl naar rechts" class="pijl-icoon-zwart"></p>
 </section>
 
 <section>
@@ -107,10 +136,25 @@
     <p>Nog geen Paradiso Vinyl Club lidmaatschap? Word nu voor 7,50 euro per maand lid en ontvang al onze releases, ons magazine en andere extra's thuis en maak kans op concertkaarten voor de releaseshows. 
     Daarnaast steun je opkomende Nederlandse artiesten en ontdek je veel nieuwe muziek. 
     Eerder brachten artiesten als WIES, Personal Trainer, Bnnyhunna, YIN YIN, My Baby en Bob Uit Zuid een single uit op Paradiso Vinyl Club voor ze doorbraken bij groot publiek.</p>
-    <p>Meer informatie over Paradiso Vinyl Club</p>
+    <p class="meer-info">
+Meer informatie over Paradiso Vinyl Club
+<img src="images/pijlrechtszwart.svg" alt="pijl naar rechts" class="pijl-icoon-zwart"></p>
 </section>
 
-<footer>Bekijk in het Nederlands</footer>
+<footer class="site-footer"> <!---->
+    <div class="footer-row">
+    <div class="footer-left">
+        <img src="images/sync-icoon.svg" alt="sync icoon" class="footer-icoon"> <!---->
+        <span>Bekijk in het Nederlands</span>
+    </div>
+        <p class="footer-right"> © Paradiso 2025</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Privacy policy</p>
+            <p>Manage cookies</p>
+            </div>
+</footer>
     <script defer src="scripts/script.js"></script>
 </main>
 </body>

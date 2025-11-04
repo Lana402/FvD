@@ -64,6 +64,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -Op de newspagina leest de screenreader de alt van de afbeelding en de 'read more' tekst niet voor
   -Op de artikelpagina leest de screenreader de alt van de afbeelding, de datum en de tekst van 'Op 12 November'   t/m 'Meer info over de single' niet voor. Daarnaast ook de tekst van 'Word lid van Paradiso Vinyl Club' en daaronder.
 
+<img src="readme-images/screenshot1.jpg" width="375px" alt="screenshot WCAG checklist">
+<img src="readme-images/screenshot2.jpg" width="375px" alt="screenshot WCAG checklist">
+<img src="readme-images/screenshot3.jpg" width="375px" alt="screenshot WCAG checklist">
+
 </details>
 
 
@@ -163,7 +167,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -Op de newspagina leest het alles behalve de 'read more' tekst voor
   -Op de artikelpagina leest het de grote stukken tekst niet meer voor
 
-
+<img src="readme-images/screenshot4.jpg" width="375px" alt="screenshot WCAG checklist">
+<img src="readme-images/screenshot5.jpg" width="375px" alt="screenshot WCAG checklist">
+<img src="readme-images/screenshot6.jpg" width="375px" alt="screenshot WCAG checklist">
+<img src="readme-images/screenshot7.jpg" width="375px" alt="screenshot WCAG checklist">
+<img src="readme-images/screenshot8.jpg" width="375px" alt="screenshot WCAG checklist">
 </details>
 
 
@@ -254,7 +262,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   12. https://www.w3schools.com/css/css_overflow.asp
   13. https://dlo.mijnhva.nl/d2l/le/content/702741/Home
   14. https://developer.mozilla.org/en-US/docs/Web/CSS/display
-
+  15. https://www.svgrepo.com/svg/332570/sync
+  16. https://www.paradiso.nl/en/subbrand/tones/2546062
+  17. https://www.paradiso.nl/en/subbrand/super-sonic-jazz/95
+  18. https://www.paradiso.nl/subbrand/ticket-to-the-tropics/86
+  19. https://www.paradiso.nl/subbrand/sugar-mountain/93
+  20. https://www.paradiso.nl/en/subbrand/kosmos/2048821
+  21. https://www.paradiso.nl/en/subbrand/indiestad/89
+  22. https://www.paradiso.nl/en/subbrand/club-paradiso/97
+  23. https://www.svgrepo.com/svg/384740/thin-arrow-direction-right
 
 
 </details>
