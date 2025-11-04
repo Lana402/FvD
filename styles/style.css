@@ -9,7 +9,6 @@
 	--color-background: #f78f1e;
 }
 
-
 @font-face {
 	font-family: "Helvetica Neue LT Std 45 Light";
 	src: url(../fonts/Helvetica\ Neue\ LT\ Std\ 45\ Light.otf) format("opentype");
@@ -41,8 +40,6 @@ body {
 	/*Copilot, Prompt: Remove horizontal scrollbar*/
 	width: 100%;
 }
-
-
 
 nav {
 	display: flex;
@@ -105,8 +102,6 @@ nav ul li a {
 	color: black;
 	text-decoration: none;
 }
-
-
 
 .paradiso-home {
 	background-color: #f78f1e;
@@ -231,8 +226,6 @@ header p {
 	border-radius: 50%;
 	/* https://www.w3schools.com/howto/howto_css_rounded_images.asp */
 }
-
-
 
 body.paradiso-home main h1:nth-of-type(1) {
 	font-size: 8em;
@@ -567,7 +560,6 @@ article p {
 	padding-bottom: 1em;
 	padding-right: 2em;
 	vertical-align: middle;
-
 }
 
 .news-overview {
